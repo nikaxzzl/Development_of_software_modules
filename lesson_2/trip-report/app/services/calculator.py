@@ -29,3 +29,4 @@ def category_share(expenses, category):
         raise ValueError("нет категории")
     return part / total * 100
 
+

@@ -8,5 +8,5 @@ EXPENSES = [
     {"day": 3, "category": "еда", "amount": 430},
     {"day": 3, "category": "транспорт", "amount": 95},
     {"day": 3, "category": "жильё", "amount": 1800},
-    {"day": 3, "category": "еда", "amount": 275},
+    {"day": 3, "category": "еда", "amount": 275}, 
 ]

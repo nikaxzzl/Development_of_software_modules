@@ -12,8 +12,9 @@ def print_report(expenses):
     average = calculate_average(expenses)
     day, day_sum = most_expensive_day(expenses)
 
+
     lines = [
-        f"[bold green]ОТЧЁТ ПО ПОЕЗДКЕ[/bold green]",
+        "[bold green]ОТЧЁТ ПО ПОЕЗДКЕ[/bold green]",
         f"всего потрачено: {total} ₽",
         f"средняя трата: {average:} ₽",
         f"самый дорогой день: день {day}, {day_sum} ₽",
