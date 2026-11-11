@@ -1,13 +1,18 @@
 """Сборка текста отчёта из расчётов и вспомогательных функций."""
 
-from app.services.orders import average_kopeks, kopeks_by_waiter, total_kopeks
+from app.services.orders import (
+    Order,
+    average_kopeks,
+    kopeks_by_waiter,
+    total_kopeks,
+)
 from app.utils.money import format_rubles, to_rubles
 from app.utils.text import pad
 
-WIDTH = 34
+WIDTH: int = 34
 
 
-def build_report(orders: list[dict]) -> list[str]:
+def build_report(orders: list[Order]) -> list[str]:
     """Возвращает готовые строки отчёта по списку заказов."""
     lines = ["ОТЧЁТ ПО ЗАКАЗАМ", "-" * WIDTH]
     lines.append(f"Заказов: {len(orders)}")

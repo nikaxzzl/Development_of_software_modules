@@ -2,14 +2,14 @@
 
 from pathlib import Path
 
-from app.services.orders import load_orders
+from app.services.orders import Order, load_orders
 from app.services.report import build_report
 
 DATA_FILE = Path(__file__).resolve().parent.parent / "data" / "orders.csv"
 
 
 def main() -> None:
-    orders = load_orders(DATA_FILE)
+    orders: list[Order] = load_orders(DATA_FILE)
     for line in build_report(orders):
         print(line)
 
