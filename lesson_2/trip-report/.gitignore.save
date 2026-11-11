@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+ source /Users/nikakononova/Development_of_software_modules/.venv/bin/activate
+ source /Users/nikakononova/Development_of_software_modules/.venv/bin/activate
+
