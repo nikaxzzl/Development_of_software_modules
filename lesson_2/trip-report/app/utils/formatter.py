@@ -1,3 +1,4 @@
+from rich import print
 from app.services.calculator import (
     calculate_total,
     calculate_average,
@@ -12,7 +13,7 @@ def print_report(expenses):
     day, day_sum = most_expensive_day(expenses)
 
     lines = [
-        "ОТЧЁТ ПО ПОЕЗДКЕ",
+        f"[bold green]ОТЧЁТ ПО ПОЕЗДКЕ[/bold green]",
         f"всего потрачено: {total} ₽",
         f"средняя трата: {average:} ₽",
         f"самый дорогой день: день {day}, {day_sum} ₽",
